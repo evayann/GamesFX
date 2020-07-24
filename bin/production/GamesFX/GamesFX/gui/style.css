@@ -1,0 +1,468 @@
+/***************************/
+/* --------- All --------- */
+/***************************/
+
+.alertPane, .Background {
+    -fx-background-color: rgb(100, 100, 170);
+}
+
+.Title {
+    -fx-font-size: 5em;
+    -fx-font-family: "JetBrainsMonoMedium Nerd Font";
+}
+
+Label, TextArea {
+    -fx-text-fill: white;
+}
+
+TextField, ComboBox {
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20;
+    -fx-text-fill: white;
+    -fx-background-color: rgba(0,0,0,0.75);
+}
+
+/* ------ Spinner ------ */
+Spinner {
+    -fx-border-radius: 20 0 0 20;
+    -fx-background-radius: 20 0 0 20;
+    -fx-text-fill: white;
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.spinner > .text-field {
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20;
+    -fx-text-fill: white;
+    -fx-background-color: rgba(0,0,0,0.75);
+}
+
+.spinner .increment-arrow, .spinner .decrement-arrow {
+    -fx-background-color: linear-gradient(from 0% 50% to 0% 100%, #ABABAB 0%, #FFFFFF 100%);
+}
+
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button {
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20;
+    -fx-body-color: rgba(0,0,0,0.75);
+}
+
+/* ---- CheckBox ---- */
+CheckBox {
+    -fx-text-fill: white;
+    -fx-font-family: "JetBrainsMonoMedium Nerd Font";
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-radius:3px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #28a3f4;
+}
+
+/* ---- HyperLink ---- */
+.hyperlink {
+    -fx-text-fill: rgb(49, 49, 170);
+    -fx-font-family: "JetBrainsMonoMedium Nerd Font";
+}
+
+.hyperlink:hover {
+    -fx-text-fill: rgb(231, 202, 255);
+}
+
+.hyperlink:visited {
+    -fx-text-fill: rgb(27, 6, 47);
+}
+
+/******************************/
+/* --------- Button --------- */
+/******************************/
+
+.alertOk, .Button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #8B429F 0%, #793B8C 100%),
+            #77489A,
+            #BC6DCF,
+            radial-gradient(center 50% 50%, radius 100%, #BC6DCF, #945AC2);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4,0,0,1 );
+}
+
+.alertOk:hover, .Button:hover {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #702885 0%, #5F2272 100%),
+            #5D3080,
+            #A053B3,
+            radial-gradient(center 50% 50%, radius 100%, #A053B3, #7941A6);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4,0,0,1 );
+}
+
+.alertOk:pressed, .Button:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0, 2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.alertValid, .ValidationButton {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #00754F 0%, #006745 100%),
+            #006F44,
+            #00A47A,
+            radial-gradient(center 50% 50%, radius 100%, #00A47A, #008A54);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4,0,0,1 );
+}
+
+.alertValid:hover, .ValidationButton:hover {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #005C38 0%, #004E2F 100%),
+            #00562D,
+            #008961,
+            radial-gradient(center 50% 50%, radius 100%, #008961, #00703C);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4,0,0,1 );
+}
+
+.alertValid:pressed, .ValidationButton:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0, 2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.alertCancel, .CancelButton {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+            #9d4024,
+            #d86e3a,
+            radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4,0,0,1 );
+}
+
+.alertCancel:hover, .CancelButton:hover {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #852A00 0%, #732300 100%),
+            #80270E,
+            #B95422,
+            radial-gradient(center 50% 50%, radius 100%, #B95422, #A63315);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4,0,0,1 );
+}
+
+.alertCancel:pressed, .CancelButton:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0, 2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.AddButton {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 25;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #0073AB 0%, #006696 100%),
+            #006F97,
+            #00A1DD,
+            radial-gradient(center 50% 50%, radius 100%, #00A1DD, #008ABD);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+.AddButton:hover {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 25;
+    -fx-text-fill: white;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #005A8C 0%, #004D78 100%),
+            #00567D,
+            #0086C0,
+            radial-gradient(center 50% 50%, radius 100%, #0086C0, #0070A1);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+.AddButton:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0, 2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.PowerButton {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 25;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+            #9d4024,
+            #d86e3a,
+            radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4,0,0,1 );
+}
+
+.PowerButton:hover {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 25;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+            #9d4024,
+            #d86e3a,
+            radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4,0,0,1 );
+}
+
+.PowerButton:pressed, .PowerButton:selected:pressed {
+    -fx-padding: 12 15 11 15;
+    -fx-background-insets: 4 0 0 0, 4 0 1 0, 4 0 2 0, 4 0 1 0;
+}
+
+.PowerButton:selected {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0, 2 0 3 0, 2 0 4 0, 2 0 5 0;
+    -fx-background-radius: 25;
+    -fx-text-fill: white;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #005C38 0%, #004E2F 100%),
+            #00562D,
+            #008961,
+            radial-gradient(center 50% 50%, radius 100%, #008961, #00703C);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4,0,0,1 );
+}
+
+/***************************/
+/* ------- Welcome ------- */
+/***************************/
+
+.WelcomeBack {
+    -fx-font-size: 2em;
+    -fx-font-family: "JetBrainsMonoMedium Nerd Font";
+}
+
+.Liste {
+    -fx-background-radius: 5;
+    -fx-background-color: rgb(47, 47, 89);
+}
+
+.Liste:filled:selected:focused, .Liste:filled:selected {
+    -fx-padding: 1.15em;
+}
+
+.Liste {
+    -fx-padding: 1.15em;
+}
+
+.Liste:odd {
+    -fx-padding: 1.15em;
+}
+
+.Liste:even {
+    -fx-padding: 1.15em;
+}
+
+.Liste:filled:hover {
+    -fx-padding: 1.15em;
+}
+
+.Liste .scroll-bar:vertical {
+    -fx-background-color:#2c365d;
+}
+
+/**************************/
+/* -------- Menu -------- */
+/**************************/
+
+.MenuButton {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+    -fx-text-fill: black;
+    -fx-font-size: 1em;
+}
+
+.MenuButton:hover {
+    -fx-background-color: rgba(100, 100, 100, 0.75);
+    -fx-font-size: 1em;
+    -fx-font-style: oblique;
+}
+
+#menu {
+    -fx-background-color: rgb(150, 150, 200);
+}
+
+#logOut {
+    -fx-background-color: transparent;
+}
+
+#logOut:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.25);
+}
+
+#userPseudo {
+    -fx-text-fill: black;
+}
+
+.selected {
+    -fx-background-color: rgba(255, 141, 25, 0.57);
+}
+
+/***************************/
+/* -------- LogIn -------- */
+/***************************/
+
+.UserButton {
+    -fx-background-color: rgb(150, 150, 200);
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-width: 50px;
+}
+
+.UserButton:hover {
+    -fx-background-color: rgba(80, 80, 80, 0.85);
+    -fx-text-fill: white;
+}
+
+#newUser {
+    -fx-background-color: rgb(115, 115, 200);
+}
+
+#newUserPopUp {
+    -fx-background-color: rgb(150, 150, 200);
+    -fx-background-radius: 25px;
+
+    -fx-border-color: rgb(20, 20, 20);
+    -fx-border-width: 5px;
+    -fx-border-radius: 25px;
+}
+
+.ChangeableImage:hover {
+    -fx-opacity: 0.125;
+}
+
+/*************************/
+/* ---- Dialog Pane ---- */
+/*************************/
+
+.dialog-pane{
+    -fx-background-color: rgb(150, 150, 200);
+}
+
+/**Costumization of The Bar where the buttons are located**/
+.dialog-pane > .button-bar > .container {
+    -fx-background-color:rgb(150, 150, 200);
+}
+
+.dialog-pane > .content.label {
+    -fx-text-fill: rgb(20, 20, 20);
+}
+
+/**Costumization of DialogPane Header**/
+.dialog-pane:header .header-panel {
+    -fx-background-color: rgb(150, 150, 200);
+}
+
+.dialog-pane:header .header-panel .label{
+    -fx-background-color: rgb(150, 150, 200);
+    -fx-text-fill:rgb(20, 20, 20);
+}
+
+.dialog-pane .button{
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 25;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #0073AB 0%, #006696 100%),
+            #006F97,
+            #00A1DD,
+            radial-gradient(center 50% 50%, radius 100%, #00A1DD, #008ABD);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+.dialog-pane .button:hover{
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 25;
+    -fx-text-fill: white;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #005A8C 0%, #004D78 100%),
+            #00567D,
+            #0086C0,
+            radial-gradient(center 50% 50%, radius 100%, #0086C0, #0070A1);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+/* ------- Games ------ */
+
+.case {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+/*************************/
+/* ---- MineSweeper ---- */
+/*************************/
+
+.bomb {
+    -fx-background-image: url(../../ressources/minesweeper/bomb.png);
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+
+.flag {
+    -fx-background-image: url(../../ressources/minesweeper/flag.png);
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+
+.discover {
+    -fx-background-color: rgba(199, 48, 19, 0.88);
+}
+
+/**************************/
+/* ------ Nonogram ------ */
+/**************************/
+
+.colored {
+    -fx-background-color: rgba(199, 48, 19, 0.88);
+}
+
+.cross {
+    -fx-background-image: url(../../ressources/nonogram/croix.png);
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+
+/*************************/
+/* ----- TicTacToe ----- */
+/*************************/
+
+.Player1 {
+    -fx-background-image: url(../../ressources/tictactoe/round.png);
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+
+.Player2 {
+    -fx-background-image: url(../../ressources/tictactoe/croix.png);
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}

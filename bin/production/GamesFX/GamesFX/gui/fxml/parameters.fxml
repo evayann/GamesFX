@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GamesFX.gui.controller.ParametersController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Label text="MineSweeper" GridPane.halignment="CENTER">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </Label>
+      <Label text="Nonogram" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </Label>
+      <GridPane GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Width" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+            <Label text="Height" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+            <Label text="Number of bombs" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+            <Spinner fx:id="m_msHeight" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Spinner fx:id="m_msWidth" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Spinner fx:id="m_msBombs" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="3">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Width" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+            <Label text="Height" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+            <Spinner fx:id="m_nnWidth" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Spinner fx:id="m_nnHeight" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
+      <Button mnemonicParsing="false" onAction="#save" styleClass="ValidationButton" stylesheets="@../style.css" text="Save" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      <Label text="User" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+      <GridPane GridPane.rowIndex="5">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#updatePicture" styleClass="Button" text="Change picture" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <ImageView fx:id="m_userPicture" fitHeight="200.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#deleteAccount" styleClass="Button" text="Delete user" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+            <Label text="Change Name" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <TextField fx:id="m_userName" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="50.0" right="50.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>
